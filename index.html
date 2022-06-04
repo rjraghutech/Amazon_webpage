@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <script src="https://kit.fontawesome.com/844985f32c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {}
+
+        body {
+            margin: 0;
+            background-color: rgb(224, 224, 224);
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .headcontainer {
+            background-color: black;
+            justify-content: space-between;
+            /* height: 70px; */
+        }
+
+        .headleft {
+            /* justify-content: center; */
+        }
+
+        .location a {
+            text-decoration: none;
+            color: white;
+        }
+
+        p {
+            line-height: 2px;
+        }
+
+        .loclogo {
+            padding: 20px 4px 0 1px;
+        }
+
+        .loclogo i {
+            font-size: 25px;
+        }
+
+        .headcenter {
+            height: 55px;
+            padding-top: 10px;
+        }
+
+        .headcenter select {
+            background-color: rgb(231, 231, 231);
+            width: 60px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .headcenter i {
+            padding: 5px;
+            background-color: orange;
+            width: 50px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #searchhead {
+            width: 900px;
+        }
+
+        .headright {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .returnorder a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .dropbtn p {
+            line-height: 1px;
+        }
+        .dropbtn{
+            padding-top: 5px;
+        }
+
+
+        .cart a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            padding-top: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .cart a i {
+            font-size: 25px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(51, 51, 88);
+            padding: 10px 5px;
+        }
+
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            /* font-weight: bold; */
+            padding: 5px 9px;
+            font-size: 23px;
+        }
+
+        .midlecontent {
+            /* border: 2px solid black; */
+            text-align: center;
+            /* margin: auto 0px; */
+            background-color: rgb(240, 236, 236);
+            padding: 8px;
+            font-size: 20px;
+        }
+
+        .midlecontent a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .boxs {
+            background-color: white;
+            width: 400px;
+            margin: 0 20px;
+            /* margin-left: 40px; */
+        }
+
+        .gaming {
+            margin: 0 20px;
+            padding: 10px 0;
+        }
+
+        .box1 {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .gaming h2 {
+            font-size: 35px;
+        }
+
+        .box1 a {
+            text-decoration: none;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .box1 div {
+            margin-bottom: 13px;
+        }
+
+        .seemore a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .seemore {
+            padding: 25px 0 15px 0;
+        }
+
+        .mainbox {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .extrasign {
+            /* background-color: white; */
+            /* padding: 25px 0; */
+
+        }
+
+        .midlecontent {
+            position: relative;
+            bottom: 380px;
+            left: 0px;
+            /* right: auto; */
+            margin: 0 10px;
+        }
+
+        .mainbox {
+            position: relative;
+            bottom: 350px;
+        }
+        .mainbox1 {
+            position: relative;
+            bottom: 330px;
+        }
+        .mainbox1 {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+        .vertical{
+            background-color: white;
+            margin: 0 25px;
+            position: relative;
+            bottom: 310px;
+            padding-bottom: 25px;
+            padding-left: 25px;
+        }
+        .verimg{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+        }
+        .verticalhead h2{
+            font-size: 35px;
+            margin: 25px;
+            padding-top: 25px;
+        }
+        .verimg1{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="headcontainer flex">
+            <div class="headleft flex">
+                <a href="https://www.amazon.com/"><img src="/Images/amazonlogo-removebg-preview.png" alt="Amazon"
+                        height="90px" width="180px"></a>
+                <div class="location flex">
+                    <a href="#" class="flex">
+                        <div class="flex">
+                            <div class="loclogo">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="loctext">
+                                <div class="deliver">
+                                    <p>Deliver to</p>
+                                </div>
+                                <div class="ind">
+                                    <p>India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="headcenter flex">
+                <select name="all" id="all">
+                    <option value="all">All</option>
+                    <option value="art">Art & craft</option>
+                    <option value="automotive">Automotive</option>
+                    <option value="baby">Baby</option>
+                    <option value="body">Body</option>
+                    <option value="books">Books</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="gaming">Gaming</option>
+                    <option value="home">Home Accsesories</option>
+                    <option value="toys">Toys</option>
+                    <option value="women">Women Fashion</option>
+                </select>
+                <input type="search" name="search" id="searchhead">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="headright flex">
+                <div class="dropdown">
+                    <button class="dropbtn"><img
+                            src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/whatsapp/326/flag-india_1f1ee-1f1f3.png"
+                            alt="India" height="50px" width="40px"><i class="fa-solid fa-caret-down"
+                            style="color: grey;"></i></button>
+                    <div class="dropdown-content">
+                        <input type="radio" name="english" id="english"><label for="english">English</label><br>
+                        <input type="radio" name="kannada" id="Kannada"><label for="kannada">Kannada</label><br>
+                        <input type="radio" name="Hindi" id="hindi"><label for="hindi">Hindi</label><br>
+                        <input type="radio" name="Tamil" id="tamil"><label for="tamil">Tamil</label><br>
+                        <input type="radio" name="Telgu" id="telgu"><label for="telgu">Telgu</label>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <p>Hello, Sign in</p>
+                        <p>Account & Lists <i class="fa-solid fa-caret-down" style="color: grey;"></i></p>
+                    </button>
+                    <div class="dropdown-content">
+                        <input type="button" value="Log In">
+                        <p>New Customer? <a href="#">Start here</a></p>
+                    </div>
+                </div>
+                <div class="returnorder">
+                    <a href="#">
+                        <p>Returns</p>
+                        <p>& Orders</p>
+                    </a>
+                </div>
+                <div class="cart">
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p>Cart</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="navleft">
+            <a href="#"><i class="fa-solid fa-bars"></i> All</a>
+            <a href="#">Today's Deals</a>
+            <a href="#">Customers Service</a>
+            <a href="#">Registry</a>
+            <a href="#">Gift Cards</a>
+            <a href="#">Sell</a>
+        </div>
+        <div class="navright">
+            <a href="#">Shop Father's Day Gift</a>
+        </div>
+    </nav>
+    <main class="main">
+        <div>
+            <img src="/Images/61jovjd+f9L._SX3000_.jpg" alt="" width="100%">
+        </div>
+        <div class="midlecontent">
+            <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local
+                delivery. <a
+                    href="https://www.amazon.com/gp/redirect.html?_encoding=UTF8&location=https%3A%2F%2Fwww.amazon.in%2F%3Fref%3Daisgw_intl_stripe_in&source=standards&token=91F73851318D7EEF2C0295B2C04EF4042B988FD2&pf_rd_r=JXGB0QNDCRZZ7TCGFR3N&pf_rd_p=ad7e52ed-7e0b-44e3-85c1-b8a893426b20&pd_rd_r=5f707e7c-05c2-4097-90b2-b23a8fa10517&pd_rd_w=3qwlr&pd_rd_wg=X30jt&ref_=pd_gw_unk">
+                    Click here to go to amazon.in</a></p>
+        </div>
+        <div class="mainbox">
+            <div class="boxs">
+                <div class="gaming">
+                    <h2>Gaming accessories</h2>
+                    <div class="box1">
+                        <div>
+                            <a href="#"> <img
+                                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg"
+                                    alt="Headphone"><br> Headsets</a>
+                        </div>
+                        <div>
+                            <a href="#"><img
+                                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg"
+                                    alt="keyboard"><br>Keyboards</a>
+                        </div>
+                        <div>
+                            <a href="#"><img
+                                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg"
+                                    alt="Mouse"><br>Computer mice</a>
+                        </div>
+                        <div>
+                            <a href="#"><img
+                                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg"
+                                    alt="chairs"><br>Chairs</a>
+                        </div>
+                    </div>
+                    <div class="seemore">
+                        <a href="#">See more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="boxs">
+                <div class="gaming">
+                    <h2>Shop by Category</h2>
+                    <div class="box1">
+                        <div>
+                            <a href="#"> <img
+                                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/February/Dashboard/computer120x._SY85_CB468850970_.jpg"
+                                    alt="Computer" width="186" height="116"><br> Computer & Accessories</a>
+                        </div>
+                        <div>
+                            <a href="#"><img
+                                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/August/DashboardCard/PS4_120X._SY85_CB438749318_.jpg"
+                                    alt="Video Games" width="186" height="116"><br>Video Games</a>
+                        </div>
+                        <div>
+                            <a href="#"><img
+                                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/February/Dashboard/Baby120X._SY85_CB468850882_.jpg"
+                                    alt="Baby" width="186" height="116"><br>Baby</a>
+                        </div>
+                        <div>
+                            <a href="#"><img
+                                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2019/February/Dashboard/Toys120X._SY85_CB468851693_.jpg"
+                                    alt="Toys" width="186" height="116"><br>Toys & Games</a>
+                        </div>
+                    </div>
+                    <div class="seemore">
+                        <a href="#">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="boxs">
+                <div class="gaming">
+                    <h2>Computers accessories</h2>
+                    <div class="box1">
+                        <div>
+                            <a href="#"> <img
+                                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_PC_1x._SY304_CB431800965_.jpg"
+                                    alt="Computer" width="330px" height="280"></a>
+                        </div>
+                    </div>
+                    <div class="seemore">
+                        <a href="#">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="boxs">
+                <div class="gaming">
+                    <div class="extrasign">
+                        <h2>Sign in for the best experience</h2>
+                        <input type="button" value="Sign In Securely"
+                            style="background-color: orange; width: 100%; border: 0; border-radius: 8px; padding: 15px; font-size: 20px; font-weight: 900; margin-bottom: 10px;">
+                    </div>
+                    <div class="box1">
+                        <div>
+                            <a href="#"><img
+                                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/October/Fuji_D2_45M_en_US_1x._CB418309979_.jpg"
+                                    alt="Image" width="350px" height="240px"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainbox1">
+            <div class="boxs">
+                <div class="gaming">
+                    <h2>Shop Father's Day Gifts</h2>
+                    <div class="box1">
+                        <div>
+                            <a href="#"> <img
+                                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2022/FathersDay/Fuji_FathersDay22_Dash_1X._SY304_CB636880260_.jpg"
+                                    alt="Headphone"  width="330px" height="280"></a>
+                        </div>
+                    </div>
+                    <div class="seemore">
+                        <a href="#">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="boxs">
+                <div class="gaming">
+                    <h2>Health & Personal Care</h2>
+                    <div class="box1">
+                        <div>
+                            <a href="#"> <img
+                                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/GW_CONS_AUS_HPC_HPCEssentials_CatCard_Desktop1x._SY304_CB627424361_.jpg"
+                                    alt="Computer"  width="330px" height="280">
+                            </a>
+                                
+                        </div>
+                        <div class="seemore">
+                            
+                        </div>
+                        <div class="seemore">
+                            <a href="#">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxs">
+                <div class="gaming">
+                    <h2>Deal of the Day</h2>
+                    <div class="box1">
+                        <div>
+                            <a href="#"> <img
+                                    src="https://m.media-amazon.com/images/I/617bnGrvpyL._AC_SY230_.jpg"
+                                    alt="Computer" width="330px" height="280"></a>
+                        </div>
+                    </div>
+                    <div class="seemore">
+                        <a href="#">See all deals</a>
+                    </div>
+                </div>
+            </div>
+            <div class="boxs">
+                <div class="gaming">
+                    <h2>Dresses</h2>
+                    <div class="box1">
+                        <div>
+                            <a href="#"> <img
+                                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/Fuji_dash_dress_1X._SY304_CB626369146_.jpg"
+                                    alt="Computer" width="330px" height="280"></a>
+                        </div>
+                    </div>
+                    <div class="seemore">
+                        <a href="#">Shop now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vertical">
+            <div class="verticalhead">
+                <h2>Popular products in PC internationally</h2>
+            </div>
+            <div class="verimg">
+                <div class="verimgin">
+                    <img src="https://m.media-amazon.com/images/I/71zZiQGzc5L._AC_SY200_.jpg" alt="Laptop1">
+                </div>
+                <div class="verimgin">
+                    <img src="https://m.media-amazon.com/images/I/7189iXimfWL._AC_SY200_.jpg" alt="Laptop2">
+                </div>
+                <div class="verimgin">
+                    <img src="https://m.media-amazon.com/images/I/71CQsZ0yLoL._AC_SY200_.jpg" alt="fan">
+                </div>
+                <div class="verimgin">
+                    <img src="https://m.media-amazon.com/images/I/81PbOX7ZtaL._AC_SY200_.jpg" alt="laptop3">
+                </div>
+                <div class="verimgin">
+                    <img src="
+                    https://m.media-amazon.com/images/I/61ozCZuzxdL._AC_SY200_.jpg" alt="cable">
+                </div>
+            </div>
+        </div>
+        <div class="vertical">
+            <div class="verticalhead">
+                <h2>Frequently repurchased in Home</h2>
+            </div>
+            <div class="verimg1">
+                <div class="verimgin">
+                    <img src="https://m.media-amazon.com/images/I/81iE3y6OcNL._AC_SY200_.jpg" alt="Laptop1">
+                </div>
+                <div class="verimgin">
+                    <img src="https://m.media-amazon.com/images/I/71O05HuffaL._AC_SY200_.jpg" alt="Laptop2">
+                </div>
+                <div class="verimgin">
+                    <img src="https://m.media-amazon.com/images/I/91qmPJKT87L._AC_SY200_.jpg" alt="fan">
+                </div>
+                <div class="verimgin">
+                    <img src="https://m.media-amazon.com/images/I/915O4117YPL._AC_SY200_.jpg" alt="laptop3">
+                </div>
+                <div class="verimgin">
+                    <img src="
+                    https://m.media-amazon.com/images/I/812LVAgQdiL._AC_SY200_.jpg" alt="cable">
+                </div>
+                <div class="verimgin">
+                    <img src="
+                    https://m.media-amazon.com/images/I/81A8CTc6icL._AC_SY200_.jpg" alt="cable">
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
